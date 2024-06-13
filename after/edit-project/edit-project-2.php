@@ -56,7 +56,7 @@ $rows_edit_p = mysqli_fetch_assoc($edit_p)
                 <a href="../../php/php-log-out.php" class="navbar-button-logout"><div class="navbar-button-text-alt">logout</div></a>
                 <div class="button-dropdown">
                     <div class="button-dropdown-1 margin-auto">
-                    <div class="foto-profil" style="<?php 
+                    <div class="foto-profil" style="<?php
                     if ($rows["profilePicture"] == ""){
                         echo "background-image:url('../../asset/users/user/default-profil.jpg');";
                     } else {
@@ -124,19 +124,19 @@ $rows_edit_p = mysqli_fetch_assoc($edit_p)
                     <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
                 </svg>
                 Delete Project
-            </div> 
+            </div>
 
             <div class="bg-notif-edit" id="notification-delete" style="display: none;">
                 <div class="content-side-bar succes-upload notif-edit" >
                     <img id="img-notif" src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                     <label for="" class="font-succes bold">Are you sure you want to</label><br>
                     <label for="" class="font-succes grey ">Delete this Project?</label><br><br><br>
-                    
+
                     <div class="button-notif">
                         <a onclick="notifikasiBack('notification-delete')" ><div class="button-back-cancel">Back</div></a>
                         <form action="../../php/delete-project.php" method="post">
                             <input type="text" name="projectId" value="<?php echo $id_project?>" hidden>
-                            <button type="submit"  class="button-back-home" onclick="">Delete</button> 
+                            <button type="submit"  class="button-back-home" onclick="">Delete</button>
                         </form>
                     </div>
                 </div>
@@ -153,12 +153,12 @@ $rows_edit_p = mysqli_fetch_assoc($edit_p)
 
                     <label for="fileInput" class="bold">Change Project Picture</label>
                     <input type="file" id="projectPicture" name="projectPicture" class="input-link" >
-                    
+
                     <br><br>
 
                     <label for="" class="bold"> Link Project</label><label for="" class="grey">  (optional) </label><br>
-                    <input type="text" class="input-link" placeholder="Click Here....." id="projectLink" name="projectLink" value="<?php echo $rows_edit_p["projectLink"]?>"><br><br>
-                    
+                    <input type="text" class="input-link" placeholder="Type Here....." id="projectLink" name="projectLink" value="<?php echo $rows_edit_p["projectLink"]?>"><br><br>
+
                     <label class="roboto bold red">
                         <?php
                         if(isset($_GET['pesan'])){
@@ -181,7 +181,7 @@ $rows_edit_p = mysqli_fetch_assoc($edit_p)
                         if(isset($_GET['pesan'])){
                             if($_GET['pesan'] == "sukses"){
                                 echo "Your data has been successfully changed";
-                            }                        
+                            }
                         }
                         ?>
                     </label>
@@ -200,10 +200,10 @@ $rows_edit_p = mysqli_fetch_assoc($edit_p)
                             <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                             <label for="" class="font-succes bold">Are you sure you want to</label><br>
                             <label for="" class="font-succes grey ">Change your data?</label><br><br><br>
-                            
+
                             <div class="button-notif">
                                 <a onclick="notifikasiEditSuccesBack('notification-edit')" ><div class="button-back-cancel">Back</div></a>
-                                <button type="submit"  class="button-back-home" onclick="">change</button> 
+                                <button type="submit"  class="button-back-home" onclick="">change</button>
                             </div>
                         </div>
                     </div>

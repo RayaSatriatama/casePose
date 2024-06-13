@@ -116,7 +116,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                                 <label for="" class="bold List-dropdown-label">Logout</label>
                             </div></a>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -143,22 +143,22 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                     </div>
                 </div>
                 <form action="../../php/submit-project/back-3.php" method="post">
-                <input type="text" class="input-link" name="projectName" placeholder="Click Here....." value="<?php echo $projectName?>" hidden>
-                    <textarea type="text" class="input-desc" name="projectDescription" placeholder="Click Here....." hidden><?php echo $projectDescription?></textarea>
+                <input type="text" class="input-link" name="projectName" placeholder="Type Here....." value="<?php echo $projectName?>" hidden>
+                    <textarea type="text" class="input-desc" name="projectDescription" placeholder="Type Here....." hidden><?php echo $projectDescription?></textarea>
                     <select name="projectType" id="" hidden>
                             <option value="<?php echo $projectType?>" selected><?php echo $projectType?></option>
                     </select>
                     <input type="text" id="fileInput" name="projectPicture" class="input-link"  value="<?php echo $projectPicture?>" hidden>
-                    <input type="text" class="input-link" placeholder="Click Here....." name="projectLink" value="<?php echo $projectLink?>" hidden>
+                    <input type="text" class="input-link" placeholder="Type Here....." name="projectLink" value="<?php echo $projectLink?>" hidden>
                      <button id="back1" type="submit" class="button-contained" ><img src="../../asset/chevron-left.png">Back</button>
                 </form>
-                
+
                 <div class="bg-notif-edit" id="notification-back" style="display: none;">
                     <div class="content-side-bar succes-upload notif-edit" >
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back')" ><div class="button-back-cancel">Back</div></a>
                             <form action="../../php/php-delete-foto.php" method="post">
@@ -166,7 +166,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                                 <input type="text" name="halaman" value="../after/index.php" hidden>
                                 <input type="text" value="<?php echo $projectPicture?>" name="name_file" hidden>
                                 <button class="button-back-home" name="hapus-img">Cancel this Form</button>
-                            </form>   
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back-about')" ><div class="button-back-cancel">Back</div></a>
                             <form action="../../php/php-delete-foto.php" method="post">
@@ -184,17 +184,17 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                                 <input type="text" name="halaman" value="../after/about.php" hidden>
                                 <input type="text" value="<?php echo $projectPicture?>" name="name_file" hidden>
                                 <button class="button-back-home" name="hapus-img">Cancel this Form</button>
-                            </form>   
+                            </form>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-notif-edit" id="notification-back-pricing" style="display: none;">
                     <div class="content-side-bar succes-upload notif-edit" >
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back-pricing')" ><div class="button-back-cancel">Back</div></a>
                             <form action="../../php/php-delete-foto.php" method="post">
@@ -202,7 +202,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                                 <input type="text" name="halaman" value="../after/pricing.php" hidden>
                                 <input type="text" value="<?php echo $projectPicture?>" name="name_file" hidden>
                                 <button class="button-back-home" name="hapus-img">Cancel this Form</button>
-                            </form>   
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -212,7 +212,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back-my-profil')" ><div class="button-back-cancel">Back</div></a>
                             <form action="../../php/php-delete-foto.php" method="post">
@@ -220,7 +220,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                                 <input type="text" name="halaman" value="../after/profil.php" hidden>
                                 <input type="text" value="<?php echo $projectPicture?>" name="name_file" hidden>
                                 <button class="button-back-home" name="hapus-img">Cancel this Form</button>
-                            </form>   
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -230,7 +230,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back-submit')" ><div class="button-back-cancel">Back</div></a>
                             <form action="../../php/php-delete-foto.php" method="post">
@@ -238,7 +238,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                                 <input type="text" name="halaman" value="../after/submit-project/submit-project-1.php" hidden>
                                 <input type="text" value="<?php echo $projectPicture?>" name="name_file" hidden>
                                 <button class="button-back-home" name="hapus-img">Cancel this Form</button>
-                            </form>   
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back-logout')" ><div class="button-back-cancel">Back</div></a>
                             <form action="../../php/php-delete-foto.php" method="post">
@@ -256,7 +256,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                                 <input type="text" name="halaman" value="php-log-out.php" hidden>
                                 <input type="text" value="<?php echo $projectPicture?>" name="name_file" hidden>
                                 <button class="button-back-home" name="hapus-img">Cancel this Form</button>
-                            </form>   
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -270,13 +270,13 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                         <div class="div-upload" style="background-image: url('../../asset/users/project/halaman/<?php echo $projectPicture?>');"></div>
 
                         <label for="" class="bold">Project Name</label><br>
-                        <input type="text" class="input-link" name="projectName" placeholder="Click Here....." value="<?php echo $projectName?>"><br><br>
+                        <input type="text" class="input-link" name="projectName" placeholder="Type Here....." value="<?php echo $projectName?>"><br><br>
                         <label for="" class="bold">Project Description</label><br>
 
-                        <textarea type="text" class="input-desc" name="projectDescription" placeholder="Click Here....."><?php echo $projectDescription?></textarea><br><br>
+                        <textarea type="text" class="input-desc" name="projectDescription" placeholder="Type Here....."><?php echo $projectDescription?></textarea><br><br>
 
                         <label for="" class="bold">Tipe Project</label><br>
-                        <select name="projectType" id="" > 
+                        <select name="projectType" id="" >
                             <option value="<?php echo $projectType?>"><?php echo $projectType?></option>
                             <option value="Website">Website</option>
                             <option value="Application">Application</option>
@@ -285,17 +285,17 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                         </select><br>
 
                         <label for="" class="bold"> Link Project</label><label for="" class="grey">  (optional) </label><br>
-                        <input type="text" class="input-link" placeholder="Click Here....." name="projectLink" value="<?php echo $projectLink?>"><br><br>
-                        
-                        
-                        
+                        <input type="text" class="input-link" placeholder="Type Here....." name="projectLink" value="<?php echo $projectLink?>"><br><br>
+
+
+
                         <label for="" class="bold">Project status</label><br>
                         <select name="projectStatus" id="" >
                                 <option value="<?php echo $projectStatus?>" selected class="grey"> <?php echo $projectStatus?></option>
                                 <option value="FINISHED">FINISHED</option>
                                 <option value="ON GOING">ON GOING</option>
                         </select><br>
-                        
+
                         <script src="../../javascript/submit.js"></script>
                         <label for="" class="bold"> Tags</label>
                         <Input id="inputText" name="projectTag" class="input-link" type="text" placeholder="Cick Here....." oninput="createWordBoxes()" value="<?php echo $projectTag?>"><br><br>
@@ -332,7 +332,7 @@ $sql = mysqli_query($conn,"SELECT * FROM tag");
                         </div>
                     </div>
                 </div>
-            </form>     
+            </form>
         </div>
         <!-- Footer -->
         <footer class="footer">

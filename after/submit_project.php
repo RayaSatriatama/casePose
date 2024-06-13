@@ -35,11 +35,11 @@
         <div class="navbar-logo"><a href="index.php"><img src="../asset/logo/logo_2.png" alt=""></a></div>
         <div class="navbar-actions">
             <a href="submit_project.php" class="navbar-button-alt"><div class="navbar-button-text-alt">Submit Project</div></a>
-            <a href="../php/php-log-out.php" class="navbar-button-logout"><div class="navbar-button-text-alt">logout</div></a>    
+            <a href="../php/php-log-out.php" class="navbar-button-logout"><div class="navbar-button-text-alt">logout</div></a>
             <div class="button-dropdown">
                 <div class="button-dropdown-1 margin-auto">
                     <!-- <div class="foto-profil" style="background-image: url('../asset/pp.png');"></div> -->
-                    <div class="foto-profil" style="<?php 
+                    <div class="foto-profil" style="<?php
                     if ($rows["profilePicture"] == ""){
                         echo "background-image:url('../asset/users/user/default-profil.jpg');";
                     } else {
@@ -95,9 +95,9 @@
 
         <div id="content-side-bar-1" class="content-side-bar" >
             <label for="" class="bold">Project Title</label><br>
-            <input type="text" class="input-link" placeholder="Click Here....."><br><br>
+            <input type="text" class="input-link" placeholder="Type here....."><br><br>
             <label for="" class="bold">Project Description</label><br>
-            <textarea type="text" class="input-desc" placeholder="Click Here....."></textarea><br><br>
+            <textarea type="text" class="input-desc" placeholder="Type here....."></textarea><br><br>
 
             <label for="" class="bold"> Tipe Project</label><br>
             <input type="radio" id="website" name="platform" value="website">
@@ -120,7 +120,7 @@
             <input type="file" id="fileInput" style="display: none;" onchange="handleFileInputChange(event)">
         </div>
             <label for="" class="bold" > Link Project</label><br>
-            <input type="text" class="input-link" placeholder="Click Here....."><br><br>
+            <input type="text" class="input-link" placeholder="Type here....."><br><br>
             <div class="div-footer">
                 <button id="cancel2" class="button-1 bold2" onclick="goToPage('index.php')">Cancel</button>
                 <button class="button-2 bold2" onclick="nextStep2()">Next</button>
@@ -128,9 +128,9 @@
         </div>
         <div id="content-side-bar-3" class="content-side-bar" style="display: none;">
             <label for="" id="tags" class="bold">tags</label><br>
-            <input type="text" class="input-link" placeholder="Click Here....."><br><br>
+            <input type="text" class="input-link" placeholder="Type here....."><br><br>
             <label for="" class="bold">Categories</label><br>
-            <input type="text" class="input-link" placeholder="Click Here....."><br><br>
+            <input type="text" class="input-link" placeholder="Type here....."><br><br>
 
             <div class="div-footer">
                 <button id="cancel3" class="button-1 bold2" onclick="goToPage('index.php')">Cancel</button>

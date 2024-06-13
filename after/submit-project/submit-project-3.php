@@ -142,8 +142,8 @@ $name_file = $_GET["projectPicture"];
                 </div>
             </div>
             <form action="../../php/submit-project/back-2.php" method="post">
-                <input type="text" class="input-link" name="projectName" placeholder="Click Here....." value="<?php echo $projectName ?>" hidden>
-                <textarea type="text" class="input-desc" name="projectDescription" placeholder="Click Here....." hidden><?php echo $projectDescription ?></textarea>
+                <input type="text" class="input-link" name="projectName" placeholder="Type Here....." value="<?php echo $projectName ?>" hidden>
+                <textarea type="text" class="input-desc" name="projectDescription" placeholder="Type Here....." hidden><?php echo $projectDescription ?></textarea>
                 <select name="projectType" id="" hidden>
                     <option value="<?php echo $projectType ?>" selected><?php echo $projectType ?></option>
                 </select>
@@ -278,13 +278,13 @@ $name_file = $_GET["projectPicture"];
                 <div id="content-side-bar-3" class="content-side-bar">
                     <!-- nanti masukan data tag ke tabel relasi tag dan project -->
                     <label for="" id="tags" class="bold">tags</label><br>
-                    <Input id="inputText" name="projectTag" class="input-link" type="text" placeholder="Cick Here....." oninput="createWordBoxes()"><br><br>
+                    <Input id="inputText" name="projectTag" class="input-link" type="text" placeholder="Type Here....." oninput="createWordBoxes()"><br><br>
                     <div id="wordContainer"></div>
 
                     <br>
                     <label for="" class="bold">Project status</label><br>
                     <select name="projectStatus" id="">
-                        <option value="" selected disabled> Cick Here.....</option>
+                        <option value="" selected disabled> Click Here.....</option>
                         <option value="FINISHED">FINISHED</option>
                         <option value="ON PROGRESS">ON PROGRESS</option>
                         <option value="ON GOING">ON GOING</option>
@@ -308,13 +308,13 @@ $name_file = $_GET["projectPicture"];
                     </div>
 
                     <!-- disembunyikan -->
-                    <input type="text" class="input-link" name="projectName" placeholder="Click Here....." value="<?php echo $projectName ?>" hidden>
-                    <textarea type="text" class="input-desc" name="projectDescription" placeholder="Click Here....." hidden><?php echo $projectDescription ?></textarea>
+                    <input type="text" class="input-link" name="projectName" placeholder="Type Here....." value="<?php echo $projectName ?>" hidden>
+                    <textarea type="text" class="input-desc" name="projectDescription" placeholder="Type Here....." hidden><?php echo $projectDescription ?></textarea>
                     <select name="projectType" id="" hidden>
                         <option value="<?php echo $projectType ?>" selected><?php echo $projectType ?></option>
                     </select>
                     <input type="text" id="fileInput" name="projectPicture" class="input-link" value="<?php echo $name_file ?>" hidden>
-                    <input type="text" class="input-link" placeholder="Click Here....." name="projectLink" value="<?php echo $projectLink ?>" hidden>
+                    <input type="text" class="input-link" placeholder="Type Here....." name="projectLink" value="<?php echo $projectLink ?>" hidden>
 
                 </div>
             </div>

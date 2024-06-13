@@ -10,7 +10,7 @@ include '../php/read-users.php';
 
 $id_project = $_GET["idproject"];
 
-$query = mysqli_query($conn,"SELECT project.*,user.* ,user.userId,CONCAT(user.firstName,' ',user.lastName)AS nama_lengkap FROM project JOIN user ON project.userId = user.userId AND project.projectId = '$id_project'");
+$query = mysqli_query($conn,"SELECT project.*,user.*, DATE_FORMAT(STR_TO_DATE(uploadDate, '%Y-%m-%d'), '%d %M %Y') AS tanggal_upload ,user.userId,CONCAT(user.firstName,' ',user.lastName)AS nama_lengkap FROM project JOIN user ON project.userId = user.userId AND project.projectId = '$id_project'");
 $rows_project_detail = mysqli_fetch_assoc($query);
 
 ?>
@@ -194,7 +194,7 @@ $rows_project_detail = mysqli_fetch_assoc($query);
                         <label for="" class="bold2 ft-20">Date</label>
                     </div>
                     <div class="content-lbl">
-                        <label for="" class="grey ft-20"><?php echo $rows_project_detail["uploadDate"];?></label>
+                        <label for="" class="grey ft-20"><?php echo $rows_project_detail["tanggal_upload"];?></label>
                     </div>
                 </div>
             </div>

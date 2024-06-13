@@ -108,7 +108,7 @@ $projectType = $_GET["projectType"];
                                 <label for="" class="bold List-dropdown-label">Logout</label>
                             </div></a>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -135,13 +135,13 @@ $projectType = $_GET["projectType"];
                     </div>
                 </div>
                 <button id="back1"  class="button-contained" onclick="goBack()"><img src="../../asset/chevron-left.png">Back </button>
-                
+
                 <div class="bg-notif-edit" id="notification-back" style="display: none;">
                     <div class="content-side-bar succes-upload notif-edit" >
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back')" ><div class="button-back-cancel">Back</div></a>
                             <a href="../index.php" ><div class="button-back-home">Cancel this Form</div></a>
@@ -154,23 +154,23 @@ $projectType = $_GET["projectType"];
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back-about')" ><div class="button-back-cancel">Back</div></a>
                             <a href="../about.php" ><div class="button-back-home">Cancel this Form</div></a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-notif-edit" id="notification-back-pricing" style="display: none;">
                     <div class="content-side-bar succes-upload notif-edit" >
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back-pricing')" ><div class="button-back-cancel">Back</div></a>
-                            <a href="../pricing.php" ><div class="button-back-home">Cancel this Form</div></a>  
+                            <a href="../pricing.php" ><div class="button-back-home">Cancel this Form</div></a>
                         </div>
                     </div>
                 </div>
@@ -180,7 +180,7 @@ $projectType = $_GET["projectType"];
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back-my-profil')" ><div class="button-back-cancel">Back</div></a>
                             <a href="../profil.php" ><div class="button-back-home">Cancel this Form</div></a>
@@ -193,7 +193,7 @@ $projectType = $_GET["projectType"];
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back-submit')" ><div class="button-back-cancel">Back</div></a>
                             <a href="../submit-project/submit-project-1.php" ><div class="button-back-home">Cancel this Form</div></a>
@@ -206,7 +206,7 @@ $projectType = $_GET["projectType"];
                         <img src="../../asset/tanda-tanya.png" alt=""><br><br><br>
                         <label for="" class="font-succes bold">Are you sure you want to cancel this form?</label><br>
                         <label for="" class="font-succes grey ">The data you created will be deleted</label><br><br><br>
-                        
+
                         <div class="button-notif">
                             <a onclick="cancelBack('notification-back-logout')" ><div class="button-back-cancel">Back</div></a>
                             <a href="../../php/php-log-out.php" ><div class="button-back-home">Cancel this Form</div></a>
@@ -214,21 +214,21 @@ $projectType = $_GET["projectType"];
                     </div>
                 </div>
 
-                    
+
             </div>
-            
+
         <!-- form -->
         <form method="POST" action="../../php/submit-project/proses-submit-2.php" id="form2" enctype="multipart/form-data">
             <div class="content-side">
                 <div id="content-side-bar-2" class="content-side-bar">
                     <label for="fileInput" class="bold">Project Picture</label>
                     <input type="file" id="projectPicture" name="projectPicture" class="input-link" >
-                    
+
                     <br><br>
 
                     <label for="" class="bold"> Link Project</label><label for="" class="grey">  (optional) </label><br>
-                    <input type="text" class="input-link" placeholder="Click Here....." id="projectLink" name="projectLink" ><br><br>
-                    
+                    <input type="text" class="input-link" placeholder="Type Here....." id="projectLink" name="projectLink" ><br><br>
+
                     <label class="roboto bold red">
                         <?php
                         if(isset($_GET['pesan'])){
@@ -252,18 +252,18 @@ $projectType = $_GET["projectType"];
                         <a tyoe="button" id="cancel2" class="button-1 bold2" onclick="notifikasiBack()"   >Cancel</a>
                         <button type="submit" class="button-2 bold2" name="submit">Next</button>
                     </div>
-                    
+
                     <!-- disembunyikan -->
-                    <input type="text" class="input-link" name="projectName" placeholder="Click Here....." value="<?php echo $projectName?>" hidden>
-                    <textarea type="text" class="input-desc" name="projectDescription" placeholder="Click Here....." hidden><?php echo $projectDescription?></textarea>
+                    <input type="text" class="input-link" name="projectName" placeholder="Type Here....." value="<?php echo $projectName?>" hidden>
+                    <textarea type="text" class="input-desc" name="projectDescription" placeholder="Type Here....." hidden><?php echo $projectDescription?></textarea>
                     <select name="projectType" id="" hidden>
                             <option value="<?php echo $projectType?>" selected ><?php echo $projectType?></option>
                     </select>
                 </div>
             </div>
-            
+
         </form>
-   
+
         </div>
         <!-- Footer -->
         <footer class="footer">

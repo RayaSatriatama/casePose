@@ -1,4 +1,4 @@
-<?php 
+<?php
 include '../connection.php';
 session_start();
 $userId = $_SESSION["userId"];
@@ -44,8 +44,8 @@ if (empty($name_file)) {
                 // Jika validasi lolos, pindahkan file ke folder tujuan
                 if (move_uploaded_file($path, $folder_p_picture.$name_file)) {
                 unlink($folder_p_picture.$old_picture);
-                    
-                $sql = mysqli_query($conn,"UPDATE project SET projectLink = '$projectLink', 
+
+                $sql = mysqli_query($conn,"UPDATE project SET projectLink = '$projectLink',
                 projectPicture = '$name_file'
                 WHERE projectId = '$id_project'");
 
@@ -56,7 +56,7 @@ if (empty($name_file)) {
 
                 header('Location: ../../after/edit-project/edit-project-2.php?'
                 ."pesan=sukses&idproject=$id_project");
-                    
+
                 } else {
                     // Redirect jika gagal mengupload file
                     header('Location: ../../after/edit-project/edit-project-2.php?'
