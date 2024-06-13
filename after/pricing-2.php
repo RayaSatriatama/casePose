@@ -32,9 +32,12 @@ $f = 1;
             rel="stylesheet">
         <!-- Link Style CSS -->
         <link rel="stylesheet" href="../style/nav_bar.css">
-        <link rel="stylesheet" href="../style/footer.css"/>
+        <link rel="stylesheet" href="../style/footer.css">
         <link rel="stylesheet" href="../style/style.css">
         <link rel="stylesheet" href="../style/global.css">
+
+        <!-- JavaScript -->
+        <script src="../../javascript/pricing.js"></script>
     </head>
     <body>
         <!-- Navigation Bar after-->
@@ -112,9 +115,26 @@ $f = 1;
                             <img src="../asset/svg/Line.png" alt=""><h2 for="">Promote Your Project</h2>
                         </div><br>
 
-                        <label for="" class="bold">Choose yout project</label><br>
+                        <label for="" class="bold">Choose Your Project</label><br>
+                        <form action="proses-pricing-2.php" method="post">
+                            <div class="dropdown-search" name="projectId">
+                                <input type="text" class="input-1" id="myInput" onkeyup="filterFunction()" placeholder="Search and Choose Project">
+                                <div id="myDropdown" class="dropdown-content">
+                                <?php
+                                    if ($result->num_rows > 0) {
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '<div onclick="selectItem(\''. $row["projectName"] .'\', \''. $row["projectID"] .'\')">'. $row["projectName"] .'</div>';
+                                        }
+                                    } else {
+                                        echo "No results";
+                                    }
+                                ?>
+                                </div>
+                            </div>
+                        </form>
+                        
                         <select class="input-1" name="projectId" id="" >
-                            <option value=""selected disabled>Click Here......</option>
+                            <option value=""selected disabled>Click Here</option>
                             <?php while($rows = mysqli_fetch_assoc($sql_pricing)) : ?>
                             <option value="<?php echo $rows["projectId"]?>"><?php echo $rows["projectName"]?></option>
                             <?php endwhile ;?>
@@ -179,7 +199,7 @@ $f = 1;
                 <div id="paket1" class="list-pricing">
                     <div class="head-list-pricing">
                         <h2>Package 1</h2><br>
-                        <label class="">Rp.39.000.-</label><br>
+                        <label class="">Rp 39.000.-</label><br>
                         <label class="">/Month</label>
                     </div>
                     <div class="content-list-pricing">
@@ -199,7 +219,7 @@ $f = 1;
                 <div class="list-pricing margin-auto">
                     <div class="head-list-pricing" >
                         <h2>Package 2</h2><br>
-                        <label class="">Rp.59.000.-</label><br>
+                        <label class="">Rp 59.000.-</label><br>
                         <label class="">/Month</label>
                     </div>
                     <div class="content-list-pricing">
@@ -227,7 +247,7 @@ $f = 1;
                 <div class="list-pricing">
                     <div class="head-list-pricing">
                         <h2>Package 3</h2><br>
-                        <label class="">Rp.159.000.-</label><br>
+                        <label class="">Rp 159.000.-</label><br>
                         <label class="">/Month</label>
                     </div>
                     <div class="content-list-pricing">

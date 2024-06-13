@@ -19,9 +19,10 @@
             rel="stylesheet"
         />
         <!-- Link Style CSS -->
-        <link rel="stylesheet" href="style/nav_bar.css" />
-        <link rel="stylesheet" href="style/footer.css" />
+        <link rel="stylesheet" href="style/nav_bar.css" >
+        <link rel="stylesheet" href="style/footer.css" >
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/style_pricing.css"/>
         <link rel="stylesheet" href="style/global.css">
     </head>
 
@@ -66,17 +67,18 @@
             <div id="paket1" class="list-pricing" onclick="triggerButton('submit-1')">
                 <div class="head-list-pricing">
                     <h2>Package 1</h2><br>
-                    <label class="">Rp.39.000.-</label><br>
-                    <label class="">/Month</label>
+                    <img src="asset/svg/strikethrough-package1.svg" style="width: 100px;"><br>
+                    <label class="" style="color: #E11D48; font-size: 32px "><strong>Rp 39.000.-</strong></label>
+                    <label class="" style="font-size: 16px ">/Month</label>
                 </div>
                 <div class="content-list-pricing">
                     <div class="benefit">
                         <img src="asset/svg/check.svg" alt="">
-                        <label for="">promote your project for 1 month</label>
+                        <label for="">Promote your project for 1 month</label>
                     </div>
                     <div class="benefit">
                         <img src="asset/svg/check.svg" alt="">   
-                        <label for="">show in project recommendations</label>
+                        <label for="">Show in project recommendations</label>
                     </div>
                 </div>
                 <form action="php/proses-pricing.php" method="post">
@@ -88,25 +90,26 @@
             <div class="list-pricing" onclick="triggerButton('submit-2')">
                 <div class="head-list-pricing" >
                     <h2>Package 2</h2><br>
-                    <label class="">Rp.59.000.-</label><br>
-                    <label class="">/Month</label>
+                    <img src="asset/svg/strikethrough-package2.svg" style="width: 100px;"><br>
+                    <label class="" style="color: #E11D48; font-size: 32px "><strong>Rp 59.000.-</strong></label>
+                    <label class="" style="font-size: 16px ">/Month</label>
                 </div>
                 <div class="content-list-pricing">
                     <div class="benefit">
                         <img src="asset/svg/check.svg" alt="">
-                        <label for="">promote your project for 1 month</label>
+                        <label for="">Promote your project for 1 month</label>
                     </div>
                     <div class="benefit">
                         <img src="asset/svg/check.svg" alt="">
-                        <label for="">show in project recommendations</label>
+                        <label for="">Show in project recommendations</label>
                     </div>
                     <div class="benefit">
                         <img src="asset/svg/check.svg" alt="">
-                        <label for="">show in top 3 homepage</label>
+                        <label for="">Show in top 3 homepage</label>
                     </div>
                     <div class="benefit">
                         <img src="asset/svg/check.svg" alt="">
-                        <label for="">label sponsor</label>
+                        <label for="">Label sponsor</label>
                     </div>
                     <form action="php/proses-pricing.php" method="post">
                     <input type="text" name="paket" value="2" hidden>
@@ -118,25 +121,26 @@
             <div class="list-pricing" onclick="triggerButton('submit-3')">
                 <div class="head-list-pricing">
                     <h2>Package 3</h2><br>
-                    <label class="">Rp.159.000.-</label><br>
-                    <label class="">/Month</label>
+                    <img src="asset/svg/strikethrough-package3.svg" style="width: 100px;"><br>
+                    <label class="" style="color: #E11D48; font-size: 32px "><strong>Rp 159.000.-</strong></label>
+                    <label class="" style="font-size: 16px ">/Years</label>
                 </div>
                 <div class="content-list-pricing">
                     <div class="benefit">
                         <img src="asset/svg/check.svg" alt="">
-                        <label for="">promote your project for 1 Years</label>
+                        <label for="">Promote your project for 1 Years</label>
                     </div>
                     <div class="benefit">
                         <img src="asset/svg/check.svg" alt="">
-                        <label for="">show in project recommendations</label>
+                        <label for="">Show in project recommendations</label>
                     </div>
                     <div class="benefit">
                         <img src="asset/svg/check.svg" alt="">
-                        <label for="">show in top 3 homepage</label>
+                        <label for="">Show in top 3 homepage</label>
                     </div>
                     <div class="benefit">
                         <img src="asset/svg/check.svg" alt="">
-                        <label for="">label sponsor</label>
+                        <label for="">Label sponsor</label>
                     </div>
                     <form action="php/proses-pricing.php" method="post">
                         <input type="text" name="paket" value="3" hidden>

@@ -430,3 +430,31 @@ h1 {
     border-radius: 8px;
     font-size: 14px;
 }
+
+.dropdown-search{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-search input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.dropdown-search .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-search .dropdown-content div {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.dropdown-search .dropdown-content div:hover {
+    background-color: #f1f1f1;
+}
